@@ -1,7 +1,7 @@
 # vs-ci-relations
-This repository contains some of the code used in the manuscript "Theoretical relations between metrics of spike synchrony: Correlation index and vector strength"
+This repository contains some of the code used in the manuscript "Theoretical relationship between two measures of spike synchrony: Correlation index and vector strength". 
 
-## This repository contains functions and scripts to ...
+## The main functions and scripts can be used to ...
   1. simulate von Mises, AN, and GBC spike trains,
   2. calculate VS, CI and SAC from empirical data,
   3. calculate theoretical VS and CI,
