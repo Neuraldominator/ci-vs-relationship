@@ -1,5 +1,5 @@
 # vs-ci-relations
-This repository contains some of the code used in the manuscript "Theoretical relationship between two measures of spike synchrony: Correlation index and vector strength". 
+This repository contains some of the code used in the manuscript "Theoretical relationship between two measures of spike synchrony: Correlation index and vector strength" (submitted Aug 2021). 
 
 ## The main functions and scripts can be used to ...
   1. simulate von Mises, auditory nerve (AN), and globular bushy cell (GBC) spike trains,
