@@ -1,4 +1,5 @@
 # vs-ci-relations
+This repository contains some of the code used in the manuscript "Theoretical relations between metrics of spike synchrony: Correlation index and vector strength"
 
 ## This repository contains functions and scripts to ...
   1. simulate von Mises, AN, and GBC spike trains,
