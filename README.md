@@ -13,8 +13,9 @@ This repository contains some of the code used in the manuscript "Theoretical re
   + `PhaseLock.m` -- function to generate Poissonian spike trains with a von Mises spiking distribution.
   + `calcSAC.m` -- function to calculate the shuffled autocorrelogram (SAC) and correlation index (CI) for spike trains.
   + `calcPhaseHist.m` -- function to calculate the phase histogram and vector strength (VS) of spike trains.
-  + `trainAN.m` -- script to generate AN spike trains. Uses directory `BEZ2018mode` with the auditory periphery model (Bruce et al., 2018).
-  + `trainGBC.m` -- script to generate GBC spike trains with an adaptive coincidence counting model.
+  + `generateVM.m` -- script to generate Poissonian spike trains with a von Mises distribution.
+  + `generateAN.m` -- script to generate AN spike trains. Uses directory `BEZ2018mode` with the auditory periphery model (Bruce et al., 2018).
+  + `generateGBC.m` -- script to generate GBC spike trains with an adaptive coincidence counting model.
   + `gen-data-analysis.m` -- script to create Fig 3A (von Mises spike trains).
   + `an-gbc-model-analysis.m` -- script to create Fig 3B (AN and GBC spike trains).
   + `vs-ci-estimation.m` -- script to estimate CI from VS (et vice versa) with their theoretical relation.
