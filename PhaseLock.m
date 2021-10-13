@@ -6,7 +6,7 @@ function [A,K] = PhaseLock(M,N,F,R,L,P,DT)
 %   M: number of input fibers 
 %   N: time steps 
 %   F: frequency [Hz]
-%   R: vector strength (0<=R<=0.96 for a reliable calculation)
+%   R: target vector strength (0<=R<=0.96 for a reliable calculation)
 %   L: mean rate [spikes/sec] 
 %   P: initial phase [rad]
 %   DT: time step size [ms] 
