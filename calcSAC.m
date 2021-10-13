@@ -3,11 +3,11 @@ function [SAC,SACtv,CI,CN,Nsp] = calcSAC(SPin,BW,T1,T2,TL)
 % Calculating shuffled autocorrelogram of spike trains (ver 0.9)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Input 
-%  SPin: 1-D cell array of spike time vectors [ms] 
-%  BW: SAC time bin width [ms] 
-%  T1: starting time [ms] for the analysis 
-%  T2: ending time [ms] for the analysis 
-%  TL: maximum time difference [ms] for SAC calculation
+%   SPin: 1-D cell array of spike time vectors [ms] 
+%   BW: SAC time bin width [ms] 
+%   T1: starting time [ms] for the analysis 
+%   T2: ending time [ms] for the analysis 
+%   TL: maximum time difference [ms] for SAC calculation
 %
 %  +++ Notes +++
 %   The total number of spikes should be below ~20000. 
@@ -15,11 +15,11 @@ function [SAC,SACtv,CI,CN,Nsp] = calcSAC(SPin,BW,T1,T2,TL)
 %   The values of resulting time vector will be between -TL and +TL.  
 %
 % Output: 
-%  SAC: calculated SAC values
-%  SACtv: time vector [ms] for SAC 
-%  CI: correlation index (SAC at time zero) 
-%  CN: normalization factor = (#reps)*(#reps-1)*(rate^2)*(bin width)*(data length) 
-%  Nsp: number of spikes 
+%   SAC: calculated SAC values
+%   SACtv: time vector [ms] for SAC 
+%   CI: correlation index (SAC at time zero) 
+%   CN: normalization factor = (#reps)*(#reps-1)*(rate^2)*(bin width)*(data length) 
+%   Nsp: number of spikes 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % preprocessing to remove spike times out of the analysis time window
