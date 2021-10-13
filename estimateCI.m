@@ -1,7 +1,7 @@
 function [CIest,Kvs] = estimateCI(VSin)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % computes the estimated CI from VS values assuming a von Mises (vM) distribution
-% (cf. Equation 3 in paper).
+% (cf. Equation 3 in Kessler et al.).
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Inputs
 %   VSin: vector strength value(s)
