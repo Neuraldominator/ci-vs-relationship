@@ -15,9 +15,9 @@ Ndata = length(CIin);
 Kci = zeros(Ndata, 1);  
 VSest = zeros(Ndata, 1);
 for k = 1:Ndata
-    cifun = @(K)(besseli(0,2*K) ./ besseli(0,K).^2 - CIin(k));
-    Kci(k) = fsolve(cifun, 1.0, optimset('Display','off','TolFun',1e-8));
-    VSest(k) = besseli(0,2*Kvs(k)) ./ (besseli(0,Kci(k))^2);
+  cifun = @(K)(besseli(0,2*K) ./ besseli(0,K).^2 - CIin(k));
+  Kci(k) = fsolve(cifun, 1.0, optimset('Display','off','TolFun',1e-8));
+  VSest(k) = besseli(0,2*Kvs(k)) ./ (besseli(0,Kci(k))^2);
 end
 
 end % [eof]
