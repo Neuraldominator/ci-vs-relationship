@@ -2,7 +2,7 @@ function [SAC,SACtv,CI,CN,Nsp] = calcSAC(SPin,BW,T1,T2,TL)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Calculating shuffled autocorrelogram of spike trains (ver 0.9)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Input 
+% Inputs
 %   SPin: 1-D cell array of spike time vectors [ms] 
 %   BW: SAC time bin width [ms] 
 %   T1: starting time [ms] for the analysis 
@@ -14,7 +14,7 @@ function [SAC,SACtv,CI,CN,Nsp] = calcSAC(SPin,BW,T1,T2,TL)
 %   Spike times between T1 and T2 will be used for constructing the SAC. 
 %   The values of resulting time vector will be between -TL and +TL.  
 %
-% Output: 
+% Outputs
 %   SAC: calculated SAC values
 %   SACtv: time vector [ms] for SAC 
 %   CI: correlation index (SAC at time zero) 
