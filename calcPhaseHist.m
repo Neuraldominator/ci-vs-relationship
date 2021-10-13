@@ -2,7 +2,7 @@ function [PH,PHtv,VS] = calcPhaseHist(SPin,T1,T2,NB,FQ)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Calculating phase histogram and vector strength shuffled of spike trains 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Input 
+% Inputs
 %   SPin: 1-D cell array of spike time vectors [ms] 
 %   T1: starting time [ms] for the analysis 
 %   T2: ending time [ms] for the analysis 
@@ -12,7 +12,7 @@ function [PH,PHtv,VS] = calcPhaseHist(SPin,T1,T2,NB,FQ)
 %  +++ Notes +++
 %   Spike times between T1 and T2 will be used for the analysis. 
 %
-% Output: 
+% Outputs
 %   PH: calculated period histogram values
 %   PHtv: time vector for period histogram [cycle]
 %   VS: vector strength
