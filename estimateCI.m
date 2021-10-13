@@ -2,10 +2,12 @@ function [CIest,Kvs] = estimateCI(VSin)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % computes the estimated CI from VS values assuming a von Mises (vM) distribution.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% input: VSin - vector strength value(s)
+% input: 
+%   VSin: vector strength value(s)
 %
-% output: CIest - correlation index 
-%         Kvs   - concentration parameter of vM distribution
+% outputs:
+%   CIest: correlation index 
+%   Kvs: concentration parameter of vM distribution
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Ndata = length(VSin);
