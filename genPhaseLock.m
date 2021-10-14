@@ -1,4 +1,4 @@
-function [A,K] = PhaseLock(M,N,F,R,L,P,DT)
+function [A,K] = genPhaseLock(M,N,F,R,L,P,DT)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Generating phase-locked spike sequences with von Mises distribution.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
