@@ -8,6 +8,7 @@ This repository contains some of the code used in the manuscript "Theoretical re
   4. generate similar plots as in Fig. 2, Fig. 3A of Kessler et al.
 
 ### The main files and directories of the repo are
+  + `CIbin.m` -- function to calculate the theoretical SAC decay with binning (cf. Equation 7 in Kessler et al.).
   + `PhaseLock.m` -- function to generate Poissonian spike trains with a von Mises spiking distribution.
   + `calcSAC.m` -- function to calculate the shuffled autocorrelogram (SAC) and correlation index (CI) for spike trains.
   + `calcPhaseHist.m` -- function to calculate the phase histogram and vector strength (VS) of spike trains.
