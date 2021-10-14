@@ -7,7 +7,7 @@ This repository contains some of the code used in the manuscript "Theoretical re
   3. calculate or estimate theoretical VS and CI via kappa,
   4. generate similar plots as in Fig. 2, Fig. 3A of Kessler et al.
 
-### The main files and directories of the repo are
+### The main files and directories of this repository are ...
   + `CIbin.m` -- function to calculate the theoretical SAC decay with binning (cf. Equation 7 in Kessler et al.).
   + `PhaseLock.m` -- function to generate Poissonian spike trains with a von Mises spiking distribution.
   + `calcSAC.m` -- function to calculate the shuffled autocorrelogram (SAC) and correlation index (CI) for spike trains.
