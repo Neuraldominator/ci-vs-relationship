@@ -1,4 +1,4 @@
-function CI = CIbin(k,w,f,N)
+function CI = compCIbin(k,w,f,N)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Approximate calculation of CI for binning (cf. Equation 7 in Kessler et al.) 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
