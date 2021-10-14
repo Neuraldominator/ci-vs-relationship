@@ -86,7 +86,7 @@ SACdecay_D20(SACtv_D20>0) = 1 - SACtv_D20(SACtv_D20>0)/(T2_D20-T1_D20);
 %% 7. Plotting (cf. Figure 6 in Kessler et al.)
 figure(1);
 set(gcf, 'PaperPositionMode', 'auto');
-set(gcf, 'Position', [450 60 560*1.0 420*2.0]);
+set(gcf, 'Position', [450 60 1120 420]);
 
 % subplot1: SAC curve (50ms and 40ms)
 subplot(1,2,1); cla; hold on;
@@ -104,6 +104,8 @@ set(gca,'TickDir','out');
 yticks([0 1 2 3])
 yticklabels({'0','1','2','3'})
 ylim([0 max(SAC_D50)*1.24])
+ylabel('normalized #coincidences')
+xlabel('delay (ms)')
 
 
 % subplot 2: SAC curve (30ms and 20ms)
@@ -122,3 +124,4 @@ box off
 yticks([0 1 2 3])
 yticklabels({'0','1','2','3'})
 ylim([0 max(SAC_D50)*1.24])
+xlabel('delay (ms)')
