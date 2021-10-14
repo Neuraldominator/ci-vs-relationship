@@ -11,7 +11,9 @@ This repository contains some of the code used in the manuscript "Theoretical re
   + `PhaseLock.m` -- function to generate Poissonian spike trains with a von Mises spiking distribution.
   + `calcSAC.m` -- function to calculate the shuffled autocorrelogram (SAC) and correlation index (CI) for spike trains.
   + `calcPhaseHist.m` -- function to calculate the phase histogram and vector strength (VS) of spike trains.
+  + `estimateCI.m` -- function to estimate CI from VS with their theoretical relation.
+  + `estimateVS.m` -- function to estimate VS from CI with their theoretical relation.
   + `generateVM.m` -- script to generate Poissonian spike trains with a von Mises distribution; compute VS and CI; plot rasters, phase histograms and SACs; and compare empirical VS and CI values to their theoretical relation.
-  + `estimateCI.m` -- script to estimate CI from VS with their theoretical relation.
-  + `estimateVS.m` -- script to estimate VS from CI with their theoretical relation.
+  + `testSACdecay.m` -- script to estimate VS from CI with their theoretical relation.
+ 
   
