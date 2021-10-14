@@ -23,7 +23,7 @@ Nsess = length(VSin);  % number of "sessions"
 A = zeros(Nsess,M,N);  % init. spike train (in batches due to memory limit)
 K = zeros(Nsess,1);    % init. kappa
 for k = 1:Nsess
-  [A(k,:,:), K(k)] = PhaseLock(M, N, F, VSin(k), L, P, DT);
+  [A(k,:,:), K(k)] = genPhaseLock(M, N, F, VSin(k), L, P, DT);
   
   % convert binary 'A' into spike times 'spt' with temp. resolution DT
   for l = 1:M
