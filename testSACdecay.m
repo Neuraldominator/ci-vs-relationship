@@ -17,7 +17,7 @@ P = pi;   % initial phase
 
 %% 2. Generating inhomogeneous poisson spikes
 disp('making spikes');
-[SP,K] = PhaseLock(M,N,F,R,L,P,DT); 
+[SP,K] = genPhaseLock(M,N,F,R,L,P,DT); 
 SPin = cell(1,M);
 for c = 1:M
   SPin{c} = tv( logical(SP(c,:)) );
@@ -99,12 +99,12 @@ plot(SACtv_D40, max(SACest).*SACdecay_D40, 'g:'); % theo decay line (40ms)
 text(-8, max(SAC_D50)*1.24, sprintf('CI_t_h_e_o = %.4f',CIthr));
 text(-8, max(SAC_D50)*1.16, sprintf('CI_5_0_m_s = %.4f',CI_D50));
 text(-8, max(SAC_D40)*1.08, sprintf('CI_4_0_m_s = %.4f',CI_D40));
-
 box off
 set(gca,'TickDir','out');
 yticks([0 1 2 3])
 yticklabels({'0','1','2','3'})
 ylim([0 max(SAC_D50)*1.24])
+
 
 % subplot 2: SAC curve (30ms and 20ms)
 subplot(1,2,2); cla; hold on;
@@ -117,10 +117,8 @@ plot(SACtv_D20, max(SACest).*SACdecay_D20,'y:'); % theo decay line (20ms)
 text(-8, max(SAC_D30)*1.24, sprintf('CI_t_h_e_o = %.4f',CIthr));
 text(-8, max(SAC_D30)*1.16, sprintf('CI_3_0_m_s = %.4f',CI_D30));
 text(-8, max(SAC_D20)*1.08, sprintf('CI_2_0_m_s = %.4f',CI_D20));
-
 set(gca,'TickDir','out');
 box off
 yticks([0 1 2 3])
 yticklabels({'0','1','2','3'})
 ylim([0 max(SAC_D50)*1.24])
-
